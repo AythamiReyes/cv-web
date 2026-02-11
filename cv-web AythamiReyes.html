@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae Aythami Reyes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        header img {
+            width: 200px;
+            height: 200px;
+            border-radius: 5%;
+        }
+
+        .contacto {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contacto a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contacto a:hover {
+            opacity: 0.7;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .sobre-mi {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .experiencia-item,
+        .educacion-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .experiencia-item:hover,
+        .educacion-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .experiencia-item h3,
+        .educacion-item h3 {
+            color: #764ba2;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .empresa,
+        .periodo {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .funciones {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .funciones li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .funciones li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .habilidades-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .habilidad {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            transition: background 0.3s;
+        }
+
+        .habilidad:hover {
+            background: #e9ecef;
+        }
+
+        .tecnologias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-tag {
+            background: #667eea;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .contacto {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Aythami Reyes</h1>
+            <img class="foto" src="aythamireyes.jpeg" alt="Aythami Reyes">
+            <div class="contacto">
+                <a href="tel:607083431">Número: 607 083 431</a>
+                <a href="mailto:aythami.reyes1@gmail.com">Correo: aythami.reyes1@gmail.com</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Sobre Mí</h2>
+                <div class="sobre-mi">
+                    <p>
+                        Soy Aythami Reyes, Técnico en Instalaciones de Telecomunicaciones con experiencia práctica
+                        en el sector. Actualmente estoy cursando el primer año de DAW (Desarrollo de Aplicaciones Web),
+                        ampliando mis conocimientos técnicos hacia el desarrollo web. Soy una persona con muchas
+                        ganas de aprender, responsable y con capacidad para trabajar en equipo.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Experiencia Laboral</h2>
+                <div class="experiencia-item">
+                    <h3>Técnico en Instalaciones de Telecomunicaciones</h3>
+                    <div class="empresa">INSMOELCA</div>
+                    <div class="periodo">3 meses de experiencia</div>
+                    <ul class="funciones">
+                        <li>Instalador de sistemas de seguridad y contra incendios</li>
+                        <li>Técnico en redes locales y telemática</li>
+                        <li>Técnico instalador-mantenedor de equipos informáticos</li>
+                        <li>Instalador eléctrico y de telecomunicaciones en edificios de viviendas</li>
+                        <li>Instalador de antenas</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>Formación Académica</h2>
+                <div class="educacion-item">
+                    <h3>Desarrollo de Aplicaciones Web (DAW) (En aprendizaje)</h3>
+                    <div class="periodo">2025 - Actualidad | En curso - 1º año</div>
+                    <p>Aprendiendo desarrollo web front-end y back-end, bases de datos, programación orientada a objetos
+                    y diseño de interfaces. Prácticas programadas para 2026.</p>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>Grado Medio - Técnico en Instalaciones de Telecomunicaciones</h3>
+                    <div class="periodo">2021 - 2023</div>
+                    <p>
+                        Formación técnica especializada en instalación y mantenimiento de sistemas de
+                        telecomunicaciones,
+                        montaje de equipos informáticos, instalación de sistemas de seguridad, redes Ethernet,
+                        y telecomunicaciones en edificios.
+                    </p>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>Graduado en Educación Secundaria Obligatoria</h3>
+                    <div class="periodo">2014 - 2018</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Tecnologías DAW (En aprendizaje)</h2>
+                <div class="tecnologias">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">Bases de Datos</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">PHP</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Habilidades</h2>
+                <div class="habilidades-grid">
+                    <div class="habilidad">Trabajo en equipo</div>
+                    <div class="habilidad">Ganas de aprender</div>
+                    <div class="habilidad">Responsabilidad</div>
+                    <div class="habilidad">Comunicación</div>
+                    <div class="habilidad">Trabajar bajo presión</div>
+                    <div class="habilidad">Positivismo</div>
+                    <div class="habilidad">Organización</div>
+                    <div class="habilidad">Toma de decisiones</div>
+                    <div class="habilidad">Solución de problemas</div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Formación Complementaria</h2>
+                <div class="educacion-item">
+                    <h3>Inteligencia Artificial y Productividad</h3>
+                    <div class="empresa">Certificado de Google</div>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>Cómo optimizar y dar un buen uso a la IA</h3>
+                    <div class="empresa">Adecco</div>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>Lenguajes de Programación Web Frontend y Backend</h3>
+                    <div class="empresa">eFundae</div>
+                </div>
+
+                <div class="educacion-item">
+                    <h3>JavaScript desde 0</h3>
+                    <div class="empresa">Píldoras Informáticas</div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p> 2026 Aythami Reyes Currículum Web</p>
+        </footer>
+    </div>
+</body>
+</html>
